@@ -123,9 +123,10 @@ June 9, Tuesday (PhD School & Main Conference)
 
 ---
 
+
 ```{mermaid}
 flowchart TD
-  
+
   subgraph R_Env ["R Environment (>= 4.3)"]
     R_Core[R Language]
     R_Pkgs["sf, sfnetworks, dodgr,<br>osmextract, tmap, mapgl"]
@@ -174,12 +175,19 @@ All prepared datasets are published on the GitHub Releases page: [github.com/tds
 * **National Datasets (latest 7 days)**:
   * OD flow data: `od-data-week-national.parquet` (135.3 MiB) & `od-data-week-national.rds` (121.8 MiB)
   * Zone geometries: `zones-national.gpkg` (26.1 MiB) & `zones-national.rds` (14.9 MiB)
-* **Format Comparison**:
+
+
+## Format Comparison
+
   * **Parquet** (via `arrow` / `duckdb`):
     * *Pros*: Highly compressed, extremely fast columnar reads, language-agnostic (R/Python/Julia).
     * *Cons*: Requires additional packages/libraries to load.
   * **RDS** (native R):
     * *Pros*: Zero external dependencies, preserves R class types/geometries/metadata seamlessly.
     * *Cons*: R-specific, slower/less optimized for huge datasets.
+
+## Editing quarto docs + demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/31Q9ZTZOHIM?si=ELwewATPvFKvj-hz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # References
