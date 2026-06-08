@@ -1,5 +1,5 @@
 ---
-title: "Group 3 presentation: Does that work?"
+title: "Group 3 presentation"
 format:
   revealjs:
     theme: league
@@ -11,10 +11,11 @@ format:
 
 ## Team Members
 
-- **Jonas** - *Role / Interest*
-- **Helen** - *Role / Interest*
-- **Xiao** - *Role / Interest*
-- **Jaanika** - *Role / Interest*
+- **Jonas** - *Researcher / Intra-household interactions in mobility behaviour*
+- **Helen** - *Researcher / Active mobility route choice*
+- **Xiao** - *Researcher / Synthetic cycling flows*
+- **Jaanika** - *Researcher / Social groups as lever for sustainable mobility change*
+- **Keren Or** - *Researcher / Climate effects on travel mobility*
 
 ## Research Interests
 
