@@ -42,6 +42,23 @@ flows <- spod_get(
   dates = recent_dates
 )
 
+dim(flows)
+flows_national_raw <- flows |> collect()
+dim(flows_national_raw)
+# Save as parquet and rds and upload
+system.time({
+  arrow::write_parquet(flows_national_raw, "flows_national_raw.parquet")
+})
+
+system.time({
+  saveRDS(flows_national_raw, "flows_national_raw.rds")
+})
+
+# Upload to github release
+system.time({
+system("gh release upload v1 flows_national_raw.parquet")
+})
+
 # Filter and aggregate the OD data by hour
 message("Filtering and aggregating data...")
 od_data_time <- flows |>
