@@ -176,7 +176,6 @@ All prepared datasets are published on the GitHub Releases page: [github.com/tds
   * OD flow data: `od-data-week-national.parquet` (135.3 MiB) & `od-data-week-national.rds` (121.8 MiB)
   * Zone geometries: `zones-national.gpkg` (26.1 MiB) & `zones-national.rds` (14.9 MiB)
 
-
 ## Format Comparison
 
   * **Parquet** (via `arrow` / `duckdb`):
