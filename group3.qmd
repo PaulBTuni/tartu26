@@ -17,25 +17,49 @@ format:
 - **Jaanika** - *Researcher / Social groups as lever for sustainable mobility change*
 - **Keren Or** - *Researcher / Climate effects on travel mobility*
 
-## Research Interests
+## Data
 
-What are the key themes or datasets your team is interested in exploring?
+We used the following Datasets:
 
-- Spatio-temporal mobility patterns
-- Public transport accessibility
-- Active travel and routing network models
+- Spanish Origin-Destination Data (via [spanishoddata](https://ropenspain.github.io/spanishoddata/) package)
+- Bikesharing trip data from Dresden (from [european-bike-sharing-dataset](https://github.com/TUMFTM/european-bike-sharing-dataset))
+- OpenStreetMap
 
-## Selected Project Idea
+## Selected Project Ideas
 
-Briefly describe your chosen project or case study:
+We all just tried out different things, but this are some questions we tried to answer:
 
-- **What?** (e.g. Spain-France cross-border flow decay)
-- **Why?** (e.g. barrier effect of international boundaries)
-- **How?** (e.g. routing with dodgr and mapping with mapgl)
+- What trip purposes dominate for cross-border trips between Spain and France?
+- How does a public transport strike effect bikesharing usage?
+- How easy is it to get a routable cacling network from OpenStreetMap?
 
-## Expected Outputs
+## Trip purposes for cross-border trips between Spain and France
 
-What figures, maps, or statistics do you plan to generate?
+What is the dominant trip purpose (work/study-related, leisure) for the cross-border trips between Spain and France?
 
-- Symmetrical flow maps
-- Correlation analysis plots
+![Map of trip purpose by district](images/grp3-trip-purpose-cross-border.png)
+
+
+## Trip purposes for cross-border trips between Spain and France
+
+Same question using National OD week dataset (previous file version)
+
+![Text saying there is no purpose column](images/grp3-no-purpose-fields.png)
+
+## Influence of a public transport strike on bikesharing
+
+Aggregated origin-destination flows of bikesharing trips in Dresden on 2 March ("normal" Thursday) 
+
+![Map of o-d flows with mostly short trips around train stations](images/grp3-bikesharing-normal.png)
+
+## Influence of a public transport strike on bikesharing
+
+Aggregated origin-destination flows of bikesharing trips in Dresden on 3 March (Friday, 24 h public transport strike except heavy rail) 
+
+![Map of o-d flows with more and longer trips](images/grp3-bikesharing-pt-strike.png)
+
+## Generating a routable cycling network
+
+This network took less than one hour to get with no previous knowledge of the [osmextract](https://docs.ropensci.org/osmextract/articles/osmextract.html) package. And it looks quite reasonable, even though goo routing is another question.
+
+![Map of cyclable links in Dresden](images/grp3-cycling-network-dresden.png)
