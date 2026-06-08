@@ -130,6 +130,8 @@ system("gh release upload v1 flows_north_time.parquet locations_north.parquet fl
 
 </details>
 
+
+
 Downloaded the datasets we have prepared by navigating to [github.com/tdscience/tartu26/releases](https://github.com/tdscience/tartu26/releases) in your browser, or use the code below to download the code programatically.
 
 <details>
@@ -178,6 +180,11 @@ flowmap_north_interactive <- flowmapblue(
 
 # Display the map
 flowmap_north_interactive
+```
+
+
+```{r}
+
 ```
 
 The resulting interactive map is shown in @fig-flowmap-blue.

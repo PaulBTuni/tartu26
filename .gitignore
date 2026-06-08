@@ -22,3 +22,4 @@ data/
 Rplots.pdf
 study_area.osm
 *.gpkg
+.Renviron
