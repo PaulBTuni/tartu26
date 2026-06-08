@@ -121,11 +121,10 @@ June 9, Tuesday (PhD School & Main Conference)
 - 15:20–17:00 – Session 4: PhD School workshop presentations & Paper 4A
 - 17:00–17:20 – PhD School diplomas
 
-## Technology stack
+---
 
 ```{mermaid}
 flowchart TD
-  Q[Quarto Website / Reveal.js Slides]
   
   subgraph R_Env ["R Environment (>= 4.3)"]
     R_Core[R Language]
