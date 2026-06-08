@@ -200,4 +200,28 @@ Ctrl+Shift+F8 in visual mode:
 
 [@EmmaRand2026a]
 
+## Example of using age/gender data
+
+Tip: if you add `#| eval: false` to a code chunk, you can write code that won't be executed when the document is rendered. This is useful for showing code examples without running them.
+
+```{r}
+#| eval: false
+library(tidyverse)
+library(arrow)
+```
+
+In system shell:
+
+```sh
+gh release download v1
+```
+
+## Example of loading data in R
+
+```{r}
+#| eval: false
+od_data = arrow::read_parquet("od-data-week-national.parquet")
+names(od_data)
+```
+
 # References
