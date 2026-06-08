@@ -11,9 +11,9 @@ format:
 
 ## Team Members
 
-- Mariana Montero - Researcher / Micromobility
-- Leonardo Moreira - Researcher / Big Data for transport planning
-- Juan Arquero - Researcher / Route Planning Algorithms
+- Mariana Montero 🇨🇷 - Researcher / Micromobility
+- Leonardo Moreira 🇧🇷 - Researcher / Big Data for transport planning
+- Juan Arquero 🇪🇸 - Researcher / Route Planning Algorithms
 
 ## Research Interests
 
@@ -28,22 +28,26 @@ What are the key themes or datasets your team is interested in exploring?
 Studing flows between France and Spain threw Catalonia. 
 
 
-## Expected Outputs
+## Expected Outputs I
 
-OD flow containing Catalonia real data
+OD Flow map containing Catalonia real data
 
-![](imgs/group2/1.png)
+![](imgs/group2/1.png){fig-align="center"}
 
-## t
+## Expected Outputs II
 
 Separation about french and spanish regions focused in Catalonia
 
-![](imgs/group2/2.png)
+![](imgs/group2/2.png){fig-align="center"}
+
+## Expected Outputs III
 
 Elevation map contaning data of Pyrenees
 
-![](imgs/group2/3.png)
+![](imgs/group2/3.png){fig-align="center"}
+
+## Expected Outputs IV
 
 Symmetrical flow maps comparing hourly trip volumes crossing the borders and within Spain.
 
-![](imgs/group2/3.png)
+![](imgs/group2/4.png){fig-align="center"}
