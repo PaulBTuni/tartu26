@@ -15,10 +15,10 @@ format:
 
 ::::: columns
 ::: column
--   **Robin Lovelace**\
-    *Professor of Transport Data Science, University of Leeds*
--   **Juan Fonseca**\
-    *PhD Candidate, University of Leeds*
+- **Robin Lovelace**\
+  *Professor of Transport Data Science, University of Leeds*
+- **Juan Fonseca**\
+  *PhD Candidate, University of Leeds*
 :::
 
 ::: {.column width="50%"}
@@ -32,19 +32,19 @@ format:
 ::: {.column width="50%"}
 ### Day 1: Sunday, June 7
 
--   **14:00–18:00** – Practical Workshop Session 1 (with coffee break)
-    -   Finding and importing data with {spanishoddata} @kotov2026
-    -   Origin-destination analysis
-    -   Group work
+- **14:00–18:00** – Practical Workshop Session 1 (with coffee break)
+  - Finding and importing data with {spanishoddata} @kotov2026
+  - Origin-destination analysis
+  - Group work
 :::
 
 ::: {.column width="50%"}
 ### Day 2: Monday, June 8
 
--   **09:00–12:30** – Practical Workshop Session 2
-    -   Routing and route networks
-    -   Advanced topics
--   **12:30–13:30** – Lunch & Workshop Wrap-up
+- **09:00–12:30** – Practical Workshop Session 2
+  - Routing and route networks
+  - Advanced topics
+- **12:30–13:30** – Lunch & Workshop Wrap-up
 :::
 :::::
 
@@ -52,9 +52,9 @@ format:
 
 ## What research questions and policy needs can be addressed with origin-destination and route network datasets?
 
--   Unanswered questions in transport research
--   Policy needs in transport planning and management, e.g. [@mahfouz2025]
--   Specific policies and roles, e.g. transport planning officer in local government
+- Unanswered questions in transport research
+- Policy needs in transport planning and management, e.g. [@mahfouz2025]
+- Specific policies and roles, e.g. transport planning officer in local government
 
 ## Example of OD-level analysis
 
@@ -66,35 +66,34 @@ Results of clustering OD pairs to identify potential DRT operation sites [@mahfo
 
 ![](images/paste-16.png)
 
-Potential cut-through routes identified by examining differences in centrality during rush-hours.
-Credit: Juan Fonseca.
+Potential cut-through routes identified by examining differences in centrality during rush-hours. Credit: Juan Fonseca.
 
 ------------------------------------------------------------------------
 
 ## Research question ideas
 
--   What factors contribute to greater and lesser mobility connections between places (including and in addition to national borders and The Pyrenees, outlined in the workbook)?
--   To what extent does the transport network reflect flows between places? (And is there any evidence that the transport network is more a cause or a consequence of flows?)
--   Can transport system features such as high-speed rail in Spain be detected in the OD data?
+- What factors contribute to greater and lesser mobility connections between places (including and in addition to national borders and The Pyrenees, outlined in the workbook)?
+- To what extent does the transport network reflect flows between places? (And is there any evidence that the transport network is more a cause or a consequence of flows?)
+- Can transport system features such as high-speed rail in Spain be detected in the OD data?
 
 ------------------------------------------------------------------------
 
 ## Specific questions related to the workbooks
 
--   What are the main predictors of zonal flows and how can they be modelled?
-    -   See the 'jittering' method and implementation in Rust as an example [@lovelace2022]
--   How does the deterrence effect of the Spain-France border vary between weekdays and weekends?
--   To what extent does road segment betweenness centrality predict the assigned traffic volumes from the routing model?
+- What are the main predictors of zonal flows and how can they be modelled?
+  - See the 'jittering' method and implementation in Rust as an example [@lovelace2022]
+- How does the deterrence effect of the Spain-France border vary between weekdays and weekends?
+- To what extent does road segment betweenness centrality predict the assigned traffic volumes from the routing model?
 
 ------------------------------------------------------------------------
 
 ## Technical/methodological ideas
 
--   How can estimates of OD flows, e.g. those using the approaches in the Python workbook, be improved? Suggestion: try the {simodels} package in R.
--   How can we better visualise OD flows and route networks? Try the package {od} in R for example.
--   To what extent can the methods presented for Spain be applied to other contexts (you could find other OD or route network datasets, or use the methods to estimate OD flows in other contexts)?
--   What other packages can be used to work with OD and route network datasets, and how do they compare to those used in the workbook?
--   For UK analysis, the {debiasRdata} package provides observed and census MSOA OD data: [github.com/de-bias/debiasRdata](https://github.com/de-bias/debiasRdata). See the [MSOA OD data](https://github.com/de-bias/debiasRdata/blob/main/inst/extdata/msoa_OD_travel2work.csv.gz).
+- How can estimates of OD flows, e.g. those using the approaches in the Python workbook, be improved? Suggestion: try the {simodels} package in R.
+- How can we better visualise OD flows and route networks? Try the package {od} in R for example.
+- To what extent can the methods presented for Spain be applied to other contexts (you could find other OD or route network datasets, or use the methods to estimate OD flows in other contexts)?
+- What other packages can be used to work with OD and route network datasets, and how do they compare to those used in the workbook?
+- For UK analysis, the {debiasRdata} package provides observed and census MSOA OD data: [github.com/de-bias/debiasRdata](https://github.com/de-bias/debiasRdata). See the [MSOA OD data](https://github.com/de-bias/debiasRdata/blob/main/inst/extdata/msoa_OD_travel2work.csv.gz).
 
 ------------------------------------------------------------------------
 
@@ -114,15 +113,13 @@ June 8, Monday (PhD School & Main Conference)
 - 9:00–12:30 – Workshops
 - 12:30–13:30 – Lunch for PhD School
 - (13:30 onwards – Main Conference programme begins)
- 
 
 June 9, Tuesday (PhD School & Main Conference)
 
 - 15:20–17:00 – Session 4: PhD School workshop presentations & Paper 4A
 - 17:00–17:20 – PhD School diplomas
 
----
-
+------------------------------------------------------------------------
 
 ```{mermaid}
 flowchart TD
@@ -163,30 +160,44 @@ flowchart TD
 
 ## Key Links
 
--   **GitHub Repository**: [github.com/tdscience/tartu26](https://github.com/tdscience/tartu26)
--   **Workshop Website**: [tdscience.github.io/tartu26](https://tdscience.github.io/tartu26/)
+- **GitHub Repository**: [github.com/tdscience/tartu26](https://github.com/tdscience/tartu26)
+- **Workshop Website**: [tdscience.github.io/tartu26](https://tdscience.github.io/tartu26/)
 
----
+------------------------------------------------------------------------
 
 ## Datasets and Releases
 
 All prepared datasets are published on the GitHub Releases page: [github.com/tdscience/tartu26/releases](https://github.com/tdscience/tartu26/releases).
 
-* **National Datasets (latest 7 days)**:
-  * OD flow data: `od-data-week-national.parquet` (135.3 MiB) & `od-data-week-national.rds` (121.8 MiB)
-  * Zone geometries: `zones-national.gpkg` (26.1 MiB) & `zones-national.rds` (14.9 MiB)
+- **National Datasets (latest 7 days)**:
+  - OD flow data: `od-data-week-national.parquet` (135.3 MiB) & `od-data-week-national.rds` (121.8 MiB)
+  - Zone geometries: `zones-national.gpkg` (26.1 MiB) & `zones-national.rds` (14.9 MiB)
 
 ## Format Comparison
 
-  * **Parquet** (via `arrow` / `duckdb`):
-    * *Pros*: Highly compressed, extremely fast columnar reads, language-agnostic (R/Python/Julia).
-    * *Cons*: Requires additional packages/libraries to load.
-  * **RDS** (native R):
-    * *Pros*: Zero external dependencies, preserves R class types/geometries/metadata seamlessly.
-    * *Cons*: R-specific, slower/less optimized for huge datasets.
+- **Parquet** (via `arrow` / `duckdb`):
+  - *Pros*: Highly compressed, extremely fast columnar reads, language-agnostic (R/Python/Julia).
+  - *Cons*: Requires additional packages/libraries to load.
+- **RDS** (native R):
+  - *Pros*: Zero external dependencies, preserves R class types/geometries/metadata seamlessly.
+  - *Cons*: R-specific, slower/less optimized for huge datasets.
 
 ## Editing quarto docs + demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/31Q9ZTZOHIM?si=ELwewATPvFKvj-hz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/31Q9ZTZOHIM?si=ELwewATPvFKvj-hz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+
+## Illustration of visual mode
+
+Press Ctrl+F4 or click on 3 dots in top right and select Visual Editor:
+
+![](images/paste-17.png)
+
+## Demo of citations
+
+Ctrl+Shift+F8 in visual mode:
+
+[@EmmaRand2026a]
 
 # References
