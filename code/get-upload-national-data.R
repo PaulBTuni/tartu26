@@ -64,8 +64,19 @@ arrow::write_feather(locations_north, "locations_north.arrow")
 saveRDS(flows_north_time, "flows_north_time.rds")
 saveRDS(locations_north, "locations_north.rds")
 
+# Save national OD files
+message("Saving national files...")
+arrow::write_parquet(od_data_time, "od-data-week-national.parquet")
+saveRDS(od_data_time, "od-data-week-national.rds")
+
+# Save national zones
+message("Saving national zones...")
+sf::st_write(zones, "zones-national.gpkg", delete_dsn = TRUE)
+saveRDS(zones, "zones-national.rds")
+
 # Upload the files to the latest GitHub release (v1) using the gh CLI
 message("Uploading files to GitHub Release v1...")
-system("gh release upload v1 flows_north_time.parquet locations_north.parquet flows_north_time.arrow locations_north.arrow flows_north_time.rds locations_north.rds --clobber")
+system("gh release upload v1 flows_north_time.parquet locations_north.parquet flows_north_time.arrow locations_north.arrow flows_north_time.rds locations_north.rds od-data-week-national.parquet od-data-week-national.rds zones-national.gpkg zones-national.rds --clobber")
 
 message("Data update and upload complete!")
+

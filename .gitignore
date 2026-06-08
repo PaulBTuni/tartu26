@@ -21,3 +21,4 @@ data/
 *.tif
 Rplots.pdf
 study_area.osm
+*.gpkg
