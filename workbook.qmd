@@ -62,7 +62,7 @@ recent_dates = tail(valid_dates, 3)
 # Define a geographic bounding box for the Northern Spain study area
 # Covers from the coast to south of Pamplona, and from the French border
 # westward to include the Pamplona--Donostia corridor
-bbox_north <- st_bbox(c(-3.1, 42.8, -1.0, 43.4), crs = st_crs(4326))
+bbox_north <- st_bbox(c(xmin = -3.1, ymin = 42.8, xmax = -1.0, ymax = 43.4), crs = st_crs(4326))
 bbox_sf <- st_as_sfc(bbox_north)
 
 # Select zones that intersect the bounding box
@@ -130,6 +130,8 @@ system("gh release upload v1 flows_north_time.parquet locations_north.parquet fl
 
 </details>
 
+
+
 Downloaded the datasets we have prepared by navigating to [github.com/tdscience/tartu26/releases](https://github.com/tdscience/tartu26/releases) in your browser, or use the code below to download the code programatically.
 
 <details>
@@ -168,6 +170,8 @@ if (!file.exists("flows_north_time.rds")) {
 #| echo: true
 #| code-summary: "Render the interactive flow map for Northern Spain"
 
+flows_north_time <- read_rds("flows_north_time.rds")
+
 flowmap_north_interactive <- flowmapblue(
   locations = locations_north,
   flows = flows_north_time,
@@ -179,6 +183,11 @@ flowmap_north_interactive <- flowmapblue(
 
 # Display the map
 flowmap_north_interactive
+```
+
+
+```{r}
+
 ```
 
 The resulting interactive map is shown in @fig-flowmap-blue.
