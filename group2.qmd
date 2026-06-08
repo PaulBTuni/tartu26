@@ -23,9 +23,25 @@ What are the key themes or datasets your team is interested in exploring?
 - Public transport accessibility
 - Active travel and routing network models
 
-## Selected Project Idea
+## Project Idea & Methodology
 
-Studing flows between France and Spain threw Catalonia. 
+Studing flows between France and Spain threw Catalonia.
+
+::: {style="position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); width: 95%;"}
+```{mermaid}
+flowchart LR
+  A["Download<br/>Spanish ODD<br/>Data"] --> B["Filter Catalonian<br/>data with custom<br/>bounding box"]
+  B --> C["Generate<br/>Interactive<br/>flow map"]
+  C --> D["Study<br/>Spain-France<br/>border flow"]
+  D --> E["Comparison of<br/>hourly trip volumes<br/>in the cross-border<br/>region"]
+
+  style A fill:#1a1a2e,stroke:#e74c3c,color:#ffffff,stroke-width:3px
+  style B fill:#1a1a2e,stroke:#e67e22,color:#ffffff,stroke-width:3px
+  style C fill:#1a1a2e,stroke:#f1c40f,color:#ffffff,stroke-width:3px
+  style D fill:#1a1a2e,stroke:#2ecc71,color:#ffffff,stroke-width:3px
+  style E fill:#1a1a2e,stroke:#3498db,color:#ffffff,stroke-width:3px
+```
+:::
 
 
 ## Expected Outputs I
