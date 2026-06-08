@@ -173,6 +173,38 @@ All prepared datasets are published on the GitHub Releases page: [github.com/tds
   - OD flow data: `od-data-week-national.parquet` (135.3 MiB) & `od-data-week-national.rds` (121.8 MiB)
   - Zone geometries: `zones-national.gpkg` (26.1 MiB) & `zones-national.rds` (14.9 MiB)
 
+
+## Example of loading data with gh cli and R
+
+Download a specific file:
+
+```sh
+gh release download v1 --pattern "flows_national_raw.parquet"
+```
+
+```{r}
+#| eval: false
+#| echo: true
+od_data = arrow::read_parquet("flows_national_raw.parquet")
+names(od_data)
+dim(od_data)
+```
+
+
+```
+[1] "date"                        "hour"                       
+ [3] "id_origin"                   "id_destination"             
+ [5] "distance"                    "activity_origin"            
+ [7] "activity_destination"        "study_possible_origin"      
+ [9] "study_possible_destination"  "residence_province_ine_code"
+[11] "residence_province_name"     "income"                     
+[13] "age"                         "sex"                        
+[15] "n_trips"                     "trips_total_length_km"      
+[17] "year"                        "month"                      
+[19] "day"                        
+[1] 82079949       19
+```
+
 ## Format Comparison
 
 - **Parquet** (via `arrow` / `duckdb`):
@@ -214,14 +246,6 @@ In system shell:
 
 ```sh
 gh release download v1
-```
-
-## Example of loading data in R
-
-```{r}
-#| eval: false
-od_data = arrow::read_parquet("od-data-week-national.parquet")
-names(od_data)
 ```
 
 # References
