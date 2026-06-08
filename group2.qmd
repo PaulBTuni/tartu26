@@ -43,27 +43,18 @@ flowchart LR
 ```
 :::
 
-
-## Expected Outputs I
-
-OD Flow map containing Catalonia real data
-
-![](imgs/group2/1.png){fig-align="center"}
-
-## Expected Outputs II
-
-Separation about french and spanish regions focused in Catalonia
-
-![](imgs/group2/2.png){fig-align="center"}
-
 ## Expected Outputs III
 
 Elevation map contaning data of Pyrenees
 
-![](imgs/group2/3.png){fig-align="center"}
+![](images/group2-3.png){fig-align="center"}
 
 ## Expected Outputs IV
 
 Symmetrical flow maps comparing hourly trip volumes crossing the borders and within Spain.
 
-![](imgs/group2/4.png){fig-align="center"}
+![](images/group2-4.png){fig-align="center"}
+
+## BONUS - Interactive Madrid ODD Data
+
+<iframe src="images/group2-bonus.html" width="100%" height="550px" style="border: none;"></iframe>
