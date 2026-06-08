@@ -165,4 +165,21 @@ flowchart TD
 -   **GitHub Repository**: [github.com/tdscience/tartu26](https://github.com/tdscience/tartu26)
 -   **Workshop Website**: [tdscience.github.io/tartu26](https://tdscience.github.io/tartu26/)
 
+---
+
+## Datasets and Releases
+
+All prepared datasets are published on the GitHub Releases page: [github.com/tdscience/tartu26/releases](https://github.com/tdscience/tartu26/releases).
+
+* **National Datasets (latest 7 days)**:
+  * OD flow data: `od-data-week-national.parquet` (135.3 MiB) & `od-data-week-national.rds` (121.8 MiB)
+  * Zone geometries: `zones-national.gpkg` (26.1 MiB) & `zones-national.rds` (14.9 MiB)
+* **Format Comparison**:
+  * **Parquet** (via `arrow` / `duckdb`):
+    * *Pros*: Highly compressed, extremely fast columnar reads, language-agnostic (R/Python/Julia).
+    * *Cons*: Requires additional packages/libraries to load.
+  * **RDS** (native R):
+    * *Pros*: Zero external dependencies, preserves R class types/geometries/metadata seamlessly.
+    * *Cons*: R-specific, slower/less optimized for huge datasets.
+
 # References
