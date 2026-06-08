@@ -11,10 +11,9 @@ format:
 
 ## Team Members
 
-- **Member 1** - *Role / Interest*
-- **Member 2** - *Role / Interest*
-- **Member 3** - *Role / Interest*
-- **Member 4** - *Role / Interest*
+- Mariana Montero 🇨🇷 - Researcher / Micromobility
+- Leonardo Moreira 🇧🇷 - Researcher / Big Data for transport planning
+- Juan Arquero 🇪🇸 - Researcher / Route Planning Algorithms
 
 ## Research Interests
 
@@ -26,15 +25,29 @@ What are the key themes or datasets your team is interested in exploring?
 
 ## Selected Project Idea
 
-Briefly describe your chosen project or case study:
+Studing flows between France and Spain threw Catalonia. 
 
-- **What?** (e.g. Spain-France cross-border flow decay)
-- **Why?** (e.g. barrier effect of international boundaries)
-- **How?** (e.g. routing with dodgr and mapping with mapgl)
 
-## Expected Outputs
+## Expected Outputs I
 
-What figures, maps, or statistics do you plan to generate?
+OD Flow map containing Catalonia real data
 
-- Symmetrical flow maps
-- Correlation analysis plots
+![](imgs/group2/1.png){fig-align="center"}
+
+## Expected Outputs II
+
+Separation about french and spanish regions focused in Catalonia
+
+![](imgs/group2/2.png){fig-align="center"}
+
+## Expected Outputs III
+
+Elevation map contaning data of Pyrenees
+
+![](imgs/group2/3.png){fig-align="center"}
+
+## Expected Outputs IV
+
+Symmetrical flow maps comparing hourly trip volumes crossing the borders and within Spain.
+
+![](imgs/group2/4.png){fig-align="center"}

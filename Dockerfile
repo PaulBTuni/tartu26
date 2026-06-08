@@ -28,5 +28,6 @@ RUN python3 -m pip install --no-cache-dir --break-system-packages \
 RUN Rscript -e "install.packages('mapgl', repos = c('https://e-kotov.r-universe.dev', 'https://cloud.r-project.org'))"
 
 # Install R package dependencies
+COPY DESCRIPTION /tmp/DESCRIPTION
 RUN Rscript -e "if (!requireNamespace('pak', quietly = TRUE)) install.packages('pak', repos = 'https://cloud.r-project.org')" \
-  && Rscript -e "pak::pak('tdscience/tartu26')"
+  && Rscript -e "pak::local_install_deps('/tmp')"

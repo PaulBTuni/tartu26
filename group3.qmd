@@ -11,10 +11,10 @@ format:
 
 ## Team Members
 
-- **Member 1** - *Role / Interest*
-- **Member 2** - *Role / Interest*
-- **Member 3** - *Role / Interest*
-- **Member 4** - *Role / Interest*
+- **Jonas** - *Role / Interest*
+- **Helen** - *Role / Interest*
+- **Xiao** - *Role / Interest*
+- **Jaanika** - *Role / Interest*
 
 ## Research Interests
 

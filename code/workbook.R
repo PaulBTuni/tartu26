@@ -17,7 +17,7 @@ recent_dates = tail(valid_dates, 3)
 # Define a geographic bounding box for the Northern Spain study area
 # Covers from the coast to south of Pamplona, and from the French border
 # westward to include the Pamplona--Donostia corridor
-bbox_north <- st_bbox(c(-3.1, 42.8, -1.0, 43.4), crs = st_crs(4326))
+bbox_north <- st_bbox(c(xmin = -3.1, ymin = 42.8, xmax = -1.0, ymax = 43.4), crs = st_crs(4326))
 bbox_sf <- st_as_sfc(bbox_north)
 
 # Select zones that intersect the bounding box
@@ -68,14 +68,12 @@ saveRDS(locations_north, "locations_north.rds")
 system("gh release list")
 system("gh release upload v1 flows_north_time.parquet locations_north.parquet flows_north_time.rds locations_north.rds --clobber")
 
-if (!file.exists("flows_north_time.rds")) {
-  message("Precomputed Northern Spain data not found.")
-  # Download from GitHub release assets:
-  # system("gh release download v1 --pattern 'flows_north_time.rds'")
-  release_url <- "https://github.com/tdscience/tartu26/releases/download/v1/"
-  for(f in c("flows_north_time.rds", "locations_north.rds")) {
-    download.file(paste0(release_url, f), f, mode = "wb")
-  }
+message("Precomputed Northern Spain data not found.")
+# Download from GitHub release assets:
+# system("gh release download v1 --pattern 'flows_north_time.rds'")
+release_url <- "https://github.com/tdscience/tartu26/releases/download/v1/"
+for(f in c("flows_north_time.rds", "locations_north.rds")) {
+  if (!file.exists(f)) download.file(paste0(release_url, f), f, mode = "wb")
 }
 
 
@@ -130,7 +128,7 @@ sf::sf_use_s2(FALSE)
 zones <- spod_get_zones(zones = "distr", ver = 2)
 
 # Recreate larger area covering all the border between Spain and France, then select zones that intersect it:
-bbox_north <- st_bbox(c(-3.1, 42.0, 4.0, 43.4), crs = st_crs(4326))
+bbox_north <- st_bbox(c(xmin = -3.1, ymin = 42.0, xmax = 4.0, ymax = 43.4), crs = st_crs(4326))
 bbox_sf <- st_as_sfc(bbox_north)
 zones_wgs84 <- st_transform(zones, 4326)
 zones_north <- zones_wgs84 |>
@@ -253,7 +251,7 @@ segments_wgs84$elevation <- elev_vals[, 2]
 # Map segments to districts using their centroids
 spod_set_data_dir('data')
 zones <- spod_get_zones(zones = "distr", ver = 2)
-bbox_north <- st_bbox(c(-3.1, 42.0, 4.0, 43.4), crs = 4326)
+bbox_north <- st_bbox(c(xmin = -3.1, ymin = 42.0, xmax = 4.0, ymax = 43.4), crs = 4326)
 bbox_sf <- st_as_sfc(bbox_north)
 zones_wgs84 <- st_transform(zones, 4326)
 sf_use_s2(FALSE)

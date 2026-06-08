@@ -15,6 +15,7 @@ data/
 .venv
 *.egg-info/
 *.parquet
+*.arrow
 *.csv
 *.rds
 *.tif
