@@ -1,0 +1,38 @@
+name: Auto-Convert QMD to Scripts and Notebooks
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '*.qmd'
+      - 'scripts/convert_qmd.py'
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/tdscience/tartu26:latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Mark workspace as safe for git
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Run conversion script
+        run: python3 scripts/convert_qmd.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add code/ *.ipynb
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-sync generated scripts and notebooks [skip ci]"
+            git push
+          fi
