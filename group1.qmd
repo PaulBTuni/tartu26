@@ -18,18 +18,26 @@ format:
 
 ## Research interests - Cross-border trips in North-Eastern Spain to Southern France
 
-- Commute trips VS Leisure trips
+- Cross-border trips
   - Who travels and when?
+- How does the France-Spain border affect mobility patterns in the Basque Country?
+  - What are the barriers and opportunities for cross-border mobility in this region?
+
+## Border as a potential barrier for the inhabitants of the Basque Country?
+
+![](images/basque_country.jpg){fig-align="center"}
+
+Amado, A., Paül, V., & Trillo-Santamaría, J. M. (2024).
 
 ## What affects cross-border mobility?
 
-![](images/group_1/Cross-border_demographics.jpg){fig-align="center"}
+![](images/Cross-border_demographics.jpg){fig-align="center"}
 
 Guereño-Omil, B., Hannam, K., & Alzua-Sorzabal, A. (2014).
 
-## Study Area
+## Study Area: TENT Network in Spain
 
-![](images/group_1/Spain_TENT.png){fig-align="center"}
+![](images/Spain_TENT.png){fig-align="center"}
 
 ## Research Questions
 
@@ -38,33 +46,25 @@ Guereño-Omil, B., Hannam, K., & Alzua-Sorzabal, A. (2014).
 - What kind of differences are there in the demographics of those doing cross-border commuting and those doing cross-border leisure trips?
   - Comparing patterns by income, gender, age (control variables)
 
-## Research Interests
+## Planned methodology (1)
+1. Dataset 
+![](images/OD_data_example_Juliette.png){fig-align="center"}
 
-What are the key themes or datasets your team is interested in exploring?
 
-- Spatio-temporal mobility patterns
-- Public transport accessibility
-- Active travel and routing network models
+## Planned methodology (2)
+2. Data analysis
+- Compare socioeconomic characteristics of the people doing cross-border trips vs those doing domestic trips
 
-## Selected Project Idea
+3. Routing analysis
+- Connect local data (traffic survey measurement points) from Prague Strahov area to the map layer, perform simple routing analysis on the local data and visualise the results. 
 
-Briefly describe your chosen project or case study:
 
-- **What?** (e.g. Spain-France cross-border flow decay)
-- **Why?** (e.g. barrier effect of international boundaries)
-- **How?** (e.g. routing with dodgr and mapping with mapgl)
+## Routing results
+![](images/Eva_1.png){fig-align="center"}
 
-## The mobility patterns
-- Identifying the peak hours for travel
-  - Commuting (weekday)
-  - Leisure (weekend)
+## Routing results
 
-  
-## Borders as travel as a potential barrier for the inhabitants of the Basque Country?
-
-![](images/group_1/basque_country.jpg){fig-align="center"}
-
-Amado, A., Paül, V., & Trillo-Santamaría, J. M. (2024).
+![](images/Eva_2.png){fig-align="center"}
 
 ## References
 
