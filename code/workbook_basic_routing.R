@@ -19,15 +19,10 @@ if (!pkgs_installed) {
 # Load all packages
 sapply(pkgs, require, character.only = TRUE)
 
-# Check if data files exist locally; if not, download from GitHub releases
-if (!file.exists("flows_north_time.rds")) {
-    message(
-        "Precomputed Northern Spain data not found. Downloading from GitHub releases..."
-    )
-    release_url <- "https://github.com/tdscience/tartu26/releases/download/v1/"
-    for (f in c("flows_north_time.rds", "locations_north.rds")) {
-        download.file(paste0(release_url, f), f, mode = "wb")
-    }
+
+release_url <- "https://github.com/tdscience/tartu26/releases/download/v1/"
+for (f in c("flows_north_time.rds", "locations_north.rds")) {
+    download.file(paste0(release_url, f), f, mode = "wb")
 }
 
 # Load the flows and location data
