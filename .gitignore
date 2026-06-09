@@ -9,6 +9,7 @@ cache/
 **/*.quarto_ipynb
 site_libs/
 *.html
+!images/group2-bonus.html
 /.luarc.json
 *.rds
 data/

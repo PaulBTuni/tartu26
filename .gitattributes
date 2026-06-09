@@ -1,0 +1,5 @@
+# Exclude HTML files from GitHub language statistics
+*.html linguist-documentation
+
+# Mark the docs folder as documentation
+docs/** linguist-documentation
