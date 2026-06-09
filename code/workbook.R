@@ -76,7 +76,8 @@ for(f in c("flows_north_time.rds", "locations_north.rds")) {
   if (!file.exists(f)) download.file(paste0(release_url, f), f, mode = "wb")
 }
 
-
+locations_north <- readRDS("locations_north.rds")
+flows_north_time <- readRDS("flows_north_time.rds")
 flowmap_north_interactive <- flowmapblue(
   locations = locations_north,
   flows = flows_north_time,
@@ -88,6 +89,8 @@ flowmap_north_interactive <- flowmapblue(
 
 # Display the map
 flowmap_north_interactive
+
+
 
 # Note: this code block requires a version of the mapgl package from the e-kotov R-universe repository, which includes the add_time_control() function for spatio-temporal flow maps.
 install.packages('mapgl', repos = c('https://e-kotov.r-universe.dev', 'https://cloud.r-project.org'))
