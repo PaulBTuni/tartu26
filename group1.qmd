@@ -1,5 +1,5 @@
 ---
-title: "Group 1 presentation Test Edit"
+title: "Group 1 - Leisure and Commuting Mobility Patterns in the Spain-France Border Region"
 format:
   revealjs:
     theme: league
@@ -11,10 +11,32 @@ format:
 
 ## Team Members
 
-- **Member 1** - *Role / Interest*
-- **Member 2** - *Role / Interest*
-- **Member 3** - *Role / Interest*
-- **Member 4** - *Role / Interest*
+- **Eva Hajčiarová** - *PhD student / Applying routing analysis to local context*
+- **Paul Bairoh** - *PhD student / Quarto "expert" and GIS specialist*
+- **Allison Fernández-Lobo** - *PhD student / Intermodality and cross-border mobility*
+- **Juliette Le Corguillé** - *PhD student / Accessibility and public transportation*
+
+## Research interests - Cross-border trips in North-Eastern Spain to Southern France
+
+- Commute trips VS Leisure trips
+  - Who travels and when?
+
+## What affects cross-border mobility?
+
+![](images/group_1/Cross-border_demographics.jpg){fig-align="center"}
+
+Guereño-Omil, B., Hannam, K., & Alzua-Sorzabal, A. (2014).
+
+## Study Area
+
+![](images/group_1/Spain_TENT.png){fig-align="center"}
+
+## Research Questions
+
+- What are the cross-border mobility patterns in this region?
+  - What are the peak commuting hours during weekdays and typical leisure travel hours on the weekend?
+- What kind of differences are there in the demographics of those doing cross-border commuting and those doing cross-border leisure trips?
+  - Comparing patterns by income, gender, age (control variables)
 
 ## Research Interests
 
@@ -32,9 +54,20 @@ Briefly describe your chosen project or case study:
 - **Why?** (e.g. barrier effect of international boundaries)
 - **How?** (e.g. routing with dodgr and mapping with mapgl)
 
-## Expected Outputs
+## The mobility patterns
+- Identifying the peak hours for travel
+  - Commuting (weekday)
+  - Leisure (weekend)
 
-What figures, maps, or statistics do you plan to generate?
+  
+## Borders as travel as a potential barrier for the inhabitants of the Basque Country?
 
-- Symmetrical flow maps
-- Correlation analysis plots
+![](images/group_1/basque_country.jpg){fig-align="center"}
+
+Amado, A., Paül, V., & Trillo-Santamaría, J. M. (2024).
+
+## References
+
+- Amado, A., Paül, V., & Trillo-Santamaría, J. M. (2024). The cross-border dimension of regional and urban planning in the greater Basque country (Spain-France). Estudios fronterizos, 25.
+
+- Guereño-Omil, B., Hannam, K., & Alzua-Sorzabal, A. (2014). Cross-border leisure mobility styles in the Basque Eurocity. Leisure Studies, 33(6), 547–564. https://doi.org/10.1080/02614367.2013.833282
